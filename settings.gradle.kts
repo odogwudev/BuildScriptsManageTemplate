@@ -1,16 +1,22 @@
 pluginManagement {
+    //includeBuild("composite-build")
+
     repositories {
-        gradlePluginPortal()
         google()
         mavenCentral()
+        gradlePluginPortal()
     }
 }
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+
     repositories {
         google()
         mavenCentral()
+        gradlePluginPortal()
     }
 }
 rootProject.name = "BuildScriptsManageTemplate"
-include ':app'
+
+// Main module
+include(":app")
